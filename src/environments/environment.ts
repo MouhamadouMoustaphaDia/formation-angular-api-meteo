@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  config:{
+    feedRoot: 'https://api.openweathermap.org/data/2.5/weather?appid=820e23f7374496afafd48fc02780f874&units=metric&q='
+  }
 };
 
 /*

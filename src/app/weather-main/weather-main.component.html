@@ -1,0 +1,20 @@
+<div  class="mb-3" align="center"  >
+  <p>weather-main works!</p>
+</div>
+<form [formGroup]="saveForm" (ngSubmit)="getVille()">
+  <div align="center">
+    <div class="mb-3">
+      <label class="form-label"> Quel temps fait-il à ...</label>
+      <input name="ville" placeholder="Chercher une ville"   formControlName="nameVille">
+    </div>
+
+    <div class="mb-3">
+      <button class="btn btn-success" type="submit">Valider</button>
+    </div>
+  </div>
+</form>
+
+<div align="center">
+  <label> il fait </label>
+</div>
+

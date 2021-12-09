@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {WeatherServiceService} from "./service/weatherService.service";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'formation-api-angular';
+   r!: string;
+
+
 }
