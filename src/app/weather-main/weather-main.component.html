@@ -14,7 +14,12 @@
   </div>
 </form>
 
-<div align="center">
-  <label> il fait </label>
+<div align="center" *ngIf="temperature">
+  <p>il fait {{temperature}} °C</p>
+  <p> Actuellement à {{nameVille}}</p>
+  <p> La Température minimale est de: {{tempMin}}  °C</p>
+  <p>La Température maximale est de :{{tempMax}}  °C</p>
+  <p>avec une humidité de : {{humidite}}  </p>
+
 </div>
 

@@ -14,14 +14,6 @@ export class WeatherServiceService {
   getWeather(ville: string): Observable<any>{
     return this.http.get<any>(environment.config.feedRoot + ville,{responseType:"json",observe:"body"});
   }
+
 }
-/*
-.pipe(
-      tap( data => {
-        console.log(data);
-      }),
-      catchError( (err) => {
-        console.log(err)
-        return err;
-      }));
- */
+

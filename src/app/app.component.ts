@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import {WeatherServiceService} from "./service/weatherService.service";
+import {Component, EventEmitter,Input} from '@angular/core';
+import {WeatherMainComponent} from "./weather-main/weather-main.component";
 
 @Component({
   selector: 'app-root',
@@ -8,7 +8,6 @@ import {WeatherServiceService} from "./service/weatherService.service";
 })
 export class AppComponent {
   title = 'formation-api-angular';
-   r!: string;
 
 
 }
